@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout android:id="@+id/linearVerfiyPhone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <TextView
+            android:id="@+id/txtVerifyPhone"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="53dp"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.0" android:singleLine="true"
+            style="@style/txtRobotobold20"
+            android:text="@string/lbl_verify_phone"/>
+        <TextView
+            android:id="@+id/txtCodeissentto"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.0" android:singleLine="true"
+            style="@style/txtRobotoregular14"
+            android:text="@string/msg_code_is_sent_to"/>
+
+        <com.mukesh.OtpView android:focusableInTouchMode="true"
+            android:id="@+id/otpViewOtpview" android:inputType="number"
+            android:itemBackground="@color/blue_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content" app:OtpItemCount="6"
+            app:OtpItemHeight="48dp"
+            app:OtpItemSpacing="9dp"
+            app:OtpItemWidth="48dp"
+            app:OtpLineColor="@android:color/transparent" app:OtpViewType="rectangle"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtDidntreceive"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.0" android:singleLine="true"
+            style="@style/txtRobotoregular14"
+            android:text="@string/msg_didn_t_receive"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnVerifyAndContinue"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.02"
+             android:singleLine="true"
+            android:text="@string/msg_verify_and_cont"
+            android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/msg_verify_and_cont"/>
+    </LinearLayout>
+</LinearLayout>

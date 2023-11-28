@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "211164636665",
+    "project_id": "studentreside",
+    "storage_bucket": "studentreside.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211164636665:android:b848c12b6448ab7b024928",
+        "android_client_info": {
+          "package_name": "com.tryamb.studentReside"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211164636665-4lll4tplofmsc6a2ucnvhetpo004ehc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tryamb.studentReside",
+            "certificate_hash": "35f9a8a2ee82d7a4482bb4d2b8315dc76e01491e"
+          }
+        },
+        {
+          "client_id": "211164636665-mgemris2tc5ikatbdqi0808qgq3lj8tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9C8-ACNujGtNfQU6s3ymGjcRfixWQUgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211164636665-mgemris2tc5ikatbdqi0808qgq3lj8tk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

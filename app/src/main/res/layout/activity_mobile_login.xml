@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imgLogoHM"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/appicon"
+        tools:ignore="ContentDescription" />
+
+
+        <RelativeLayout
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="350dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                style="@style/LView"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/shape_edit_bg">
+
+                <TextView
+                    style="@style/WView"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:id="@+id/txt_country_code"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    style="@style/LWView"
+                    android:id="@+id/edt_mobile"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:hint="Enter Mobile Number"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="25dp"
+                style="@style/btnSolid"
+                android:id="@+id/btn_get_otp"
+                android:layout_marginTop="80dp"
+                android:text="@string/txt_get_otp" />
+        </RelativeLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gif" />
+
+</RelativeLayout>

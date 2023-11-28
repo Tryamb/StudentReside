@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/date"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_receiver"
+        android:padding="3dp"
+        tools:text="01 June"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:id="@+id/msglayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_receiver">
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            tools:text="other name" />
+        <LinearLayout
+            android:id="@+id/msg"
+            android:layout_below="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/msgc"
+            android:layout_width="wrap_content"
+            android:maxWidth="250dp"
+            android:minWidth="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            tools:text="@string/lorem_ipsum" />
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_images"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/timetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@id/msg"
+            android:layout_alignEnd="@id/msg"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            tools:text="dd/MM/YYYY hh:mm PM"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/isSeen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:visibility="gone"
+        android:text="Delivered"
+        android:textAlignment="textEnd"
+        />
+
+</LinearLayout>
+
